@@ -1,0 +1,4 @@
+{
+    "mongoURI": "mongodb+srv://tsaric:blue12345@cluster0.yohqi.gcp.mongodb.net/higinbotdb?retryWrites=true&w=majority",
+    "secret_JWT": "87-mdHTB4_/}IlAb1Ppph1uS|iWD0@zH$3LlxpbpWWV}]e#yDlqc]DM7mLekA76"
+}
