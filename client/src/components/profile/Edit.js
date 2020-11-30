@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { getCurrentProfile } from '../../actions/profile';
 import Spinner from '../layout/Spinner';
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import 'react-tabs/style/react-tabs.css';
+// import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+// import 'react-tabs/style/react-tabs.css';
 // import { render } from 'react-dom';
 import Gallery from 'react-grid-gallery';
 // import ReactPlayer from 'react-player/youtube'
@@ -127,7 +127,7 @@ const EditProfile = ({ getCurrentProfile, auth, profile: { profile, loading }}) 
   </div>
 
   <div className="profile-tabs bg-light p-2">
-    <Tabs>
+    {/* <Tabs>
         <TabList>
         <Tab>Videos</Tab>
         <Tab>Gallery</Tab>
@@ -146,7 +146,7 @@ const EditProfile = ({ getCurrentProfile, auth, profile: { profile, loading }}) 
             src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
         />
         </div> */}
-        <h2>Video Grid</h2>
+        {/*<h2>Video Grid</h2>
         </TabPanel>
         <TabPanel>
         <div className="buttons">
@@ -158,14 +158,14 @@ const EditProfile = ({ getCurrentProfile, auth, profile: { profile, loading }}) 
             <Gallery images={IMAGES}/>
         </Fragment>
         </TabPanel>
-    </Tabs>
+    </Tabs> */}
   </div>
 
   <div className="profile-tournaments bg-light p-2">
     <div className="buttons m-bottom-1">
         <Link to='/CreateTournament' className="btn btn-primary">Start Tournament</Link>
     </div>
-        <Tabs>
+        {/* <Tabs>
             <TabList>
                 <Tab>Current Tournaments</Tab>
                 <Tab>Previous Tournaments</Tab>
@@ -193,7 +193,7 @@ const EditProfile = ({ getCurrentProfile, auth, profile: { profile, loading }}) 
                     </div>
                 </Fragment>
             </TabPanel>
-        </Tabs>
+        </Tabs> */}
     </div>
 
 

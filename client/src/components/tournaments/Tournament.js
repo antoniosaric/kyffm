@@ -5,8 +5,8 @@ import { getTournamentById } from '../../actions/tournament';
 import { addUserToTournament } from '../../actions/tournament';
 import Spinner from '../layout/Spinner';
 import { Link } from 'react-router-dom';
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import 'react-tabs/style/react-tabs.css';
+// import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+// import 'react-tabs/style/react-tabs.css';
 // import { render } from 'react-dom';
 import Gallery from 'react-grid-gallery';
 // import ReactPlayer from 'react-player/youtube';
@@ -91,7 +91,7 @@ const Tournament = ({ getTournamentById, addUserToTournament, auth, tournament: 
                 </div>
             </div>
 
-            <div className="profile-tabs bg-light p-2">
+            {/* <div className="profile-tabs bg-light p-2">
                 <Tabs>
                     <TabList>
                     <Tab>Videos</Tab>
@@ -110,7 +110,7 @@ const Tournament = ({ getTournamentById, addUserToTournament, auth, tournament: 
                     </Fragment>
                     </TabPanel>
                 </Tabs>
-            </div>
+            </div> */}
         </div>
     </Fragment>
 }

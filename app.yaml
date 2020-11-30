@@ -1,26 +1,26 @@
-# runtime: nodejs10
+runtime: nodejs10
 
-# handlers:
-#   - url: /
-#     static_files: client/build/index.html
-#     upload: client/build/index.html
-#   - url: /
-#     static_dir: client/build
-
-env: standard    
-runtime: nodejs10    
-service: api    
 handlers:
+  - url: /
+    static_files: client/build/index.html
+    upload: client/build/index.html
   - url: /
     static_dir: client/build
 
-  - url: /assets
-    static_dir: client/build/assets
+# env: standard    
+# runtime: nodejs10    
+# service: api    
+# handlers:
+#   - url: /
+#     static_dir: client/build
 
-  - url: /(.*\.(json|ico|js))$
-    static_files: client/build/\1
-    upload: client/build/.*\.(json|ico|js)$
+#   - url: /assets
+#     static_dir: client/build/assets
 
-  - url: .*
-    static_files: client/build/index.html
-    upload: client/build/index.html
+#   - url: /(.*\.(json|ico|js))$
+#     static_files: client/build/\1
+#     upload: client/build/.*\.(json|ico|js)$
+
+#   - url: .*
+#     static_files: client/build/index.html
+#     upload: client/build/index.html
